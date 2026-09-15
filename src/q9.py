@@ -16,15 +16,15 @@ You have a local copy of a repo. You want to:
 Write the exact git command for each step (one per line).
 """
 
-# Step 1 — Create a new branch called `my-solutions`:
+# Step 1 — Create a new branch called `my-solutions`: git checkout -b my-solutions
 
-# Step 2 — Switch to `my-solutions`:
+# Step 2 — Switch to `my-solutions`: git switch my-solutions
 
-# Step 3 — Stage q4.md:
+# Step 3 — Stage q4.md: git add q4.md
 
-# Step 4 — Commit with message "Add Q4 answers":
+# Step 4 — Commit with message "Add Q4 answers": git commit -m "Add Q4 answers"
 
-# Step 5 — Push `my-solutions` to the remote:
+# Step 5 — Push `my-solutions` to the remote: git push -u origin my-solutions
 
 
 """
@@ -33,4 +33,7 @@ Step 6 (short answer). You run `git status` and it says
 and which command moves a file from there into the next commit?
 
     Answer:
+"""
+It means I have modified a tracked file, but the changes have not yet been prepared (staged) for the next commit. To commit a modified file, run: git add <filename>
+
 """
